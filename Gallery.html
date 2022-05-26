@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google Font: Ubuntu-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="Images/Icon.PNG">
+    <title>Gallery</title>
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="Home.html">BOB'S GRAPHIC DESIGNS</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="Home.html">ABOUT</a></li>
+          <li><a href="Gallery.html">GALLERY</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+      <div id="gallery" class="container-fluid">
+        <h2 style="font-size: 40px;">Gallery</h2><br>
+        <div class="row text-center">
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img src="Images/Keyara single.png" alt="Keyara" width="400" height="300">
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img src="Images/Bamilek.png" alt=" Bamilek" width="400" height="300">
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img src="Images/XXL.png" alt="XXL" width="400" height="300">
+            </div>
+          </div>
+        </div><br>
+        <div id="gallery" class="container-fluid">
+          <div class="row text-center">
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                <img src="Images/Fake Brank Logo.png" alt="Bank Logo" width="400" height="300">
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                <img src="Images/Keyara.png" alt="Keyara" width="400" height="300">
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                <img src="Images/Disturb.png" alt="Disturb" width="400" height="300">
+              </div>
+            </div>
+          </div><br>
+
+          <footer class="container-fluid text-center">
+            <a href="Gallery.html" title="To Top">
+              <span class="glyphicon glyphicon-chevron-up"></span><br>
+              <a href="www.facebook.com" class="fa fa-facebook"></a>
+              <a href="www.twitter.com" class="fa fa-twitter"></a>
+              <a href="www.instagram.com" class="fa fa-instagram"></a>
+              <p>bobsgraphicdesigns.co.uk</p>
+          </footer>
+          <script>
+          $(document).ready(function(){
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+              // Make sure this.hash has a value before overriding default behavior
+              if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+          
+                // Store hash
+                var hash = this.hash;
+          
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                  scrollTop: $(hash).offset().top
+                }, 900, function(){
+             
+                  // Add hash (#) to URL when done scrolling (default click behavior)
+                  window.location.hash = hash;
+                });
+              } // End if
+            });
+            
+            $(window).scroll(function() {
+              $(".slideanim").each(function(){
+                var pos = $(this).offset().top;
+          
+                var winTop = $(window).scrollTop();
+                  if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                  }
+              });
+            });
+          })
+          </script>
+</body>
+</html>
