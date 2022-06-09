@@ -70,7 +70,7 @@
       <a href="#contact"><button class="btn btn-default btn-lg">Get in Touch</button></a>
     </div>
     <div class="col-sm-4">
-      <img src="Images/Temp Fake Bob.jpg" alt="Picture of Bob the Graphic Designer" class="Bob" style="Width: 100%; height: 100%">
+      <img src="Images/Bob.jpg" alt="Picture of Bob the Graphic Designer" class="Bob" style="Width: 100%; height: 100%">
     </div>
   </div>
 </div>
@@ -133,11 +133,11 @@
 <!-- Container (Gallery Section) -->
 <div id="gallery" class="container-fluid text-center bg-grey">
   <h2>Gallery</h2><br>
-  <h4>Below are some of the graphics I've created <a href="Gallery.html" alt="Gallery">Click Here</a> to see more</h4>
+  <h4>Below are some of the graphics I've created <a href="Gallery.html">Click Here</a> to see more</h4>
   <div class="row text-center slideanim">
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="Images/Keyara single.png" alt="Keyara" width="400" height="300">
+        <img src="Images/KeyaraSingle.png" alt="Keyara" width="400" height="300">
         <p><strong>Keyara</strong></p>
         <p>A poster created by myself for an up and coming musical artist</p>
       </div>
@@ -214,16 +214,15 @@
       </div>
       <div class="row">
         <div class="col-sm-6 form-group">
-          <select class="form-control" id="service" name="service" placeholder="Service" type="service" required>
-            <option selected></option>
+          <select class="form-control" id="service" name="service" required>
             <option value="BrandNaming">Brand Naming</option>
             <option value="CreativeDirection">Creative Direction</option>
             <option value="BrandIdentity">Brand Identity</option>
-            <option value="Other">Other</option>
+            <option value="Other" selected>Other</option>
           </select>
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment..." rows="5"></textarea><br>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment..." rows="5" required></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group">
           <button class="btn btn-default pull-right" type="submit">Send</button>
@@ -240,7 +239,7 @@
 </div>
 
 <footer class="container-fluid text-center">
-  <a href="Home.html" title="To Top">
+  <a href="Home.html" title="To Top"></a>
     <span class="glyphicon glyphicon-chevron-up"></span><br>
     <a href="https://www.facebook.com/bamilek.ltd" class="fa fa-facebook"></a>
     <a href="https://twitter.com/" class="fa fa-twitter"></a>
